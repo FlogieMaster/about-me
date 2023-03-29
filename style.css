@@ -3,7 +3,7 @@
 body {
     background: linear-gradient(-45deg, white 50%, black 50%);
     background-size: 1000%, 1000%;
-    animation: gradientwhite 60s infinite;
+    animation: gradientwhite 16s infinite;
 }
 
 *::selection {
@@ -118,7 +118,7 @@ svg {
     margin: 1px;
     padding: 10px;
     border-radius: 10px;
-    animation: colorwhite 60s infinite;
+    animation: colorwhite 16s infinite;
 }
 
 .bigheader {

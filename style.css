@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background: linear-gradient(-45deg, white 50%, black 50%);
+    background-size: 1000%, 1000%;
+    animation: gradientwhite 60s infinite;
+}
+
+*::selection {
+    background-color: transparent;
+}
+
+* {
+    cursor: default;
+}
+
+@keyframes colorwhite {
+    0% {
+        color: white;
+    }
+
+    20% {
+        color: white;
+    }
+
+    30% {
+        color: black;
+    }
+
+    70% {
+        color: black;
+    }
+
+    80% {
+        color: white;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+@keyframes gradientwhite {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    20% {
+        background-position: 0% 50%;
+    }
+
+    30% {
+        background-position: 100%, 50%;
+    }
+
+    70% {
+        background-position: 100%, 50%;
+    }
+
+    80% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 0%, 100%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100%, 50%;
+    }
+
+    100% {
+        background-position: 0%, 100%;
+    }
+}
+
+.flogie {
+    text-align: center;
+    height: 500px;
+    width: 100%;
+    padding-top: 300px;
+    font-size: 3rem;
+    font-family: 'bebas neue', sans-serif;
+}
+
+#flogie {
+    background: linear-gradient(-45deg, #fe64a3 20%, #9dfff9 80%);
+    background-size: 400%, 400%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 16s infinite;
+    width: 100%;
+    letter-spacing: 0px;
+    transition: all 2s;
+}
+
+#flogie:hover{
+    letter-spacing: 40px;
+}
+
+header {
+    float: left;
+}
+
+svg:hover {
+    background: linear-gradient(45deg, rgb(254, 100, 163, 0.5) 20%, rgb(157, 255, 249, 0.5) 80%);
+    background-size: 400%, 400%;
+    animation: colorwhite 60s infinite, gradient 16s infinite;
+}
+
+svg {
+    margin: 1px;
+    padding: 10px;
+    border-radius: 10px;
+    animation: colorwhite 60s infinite;
+}
+
+.bigheader {
+    display: block;
+}
+
+.smallheader {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .bigheader {
+        display: none;
+    }
+
+    .smallheader {
+        display: block;
+    }
+
+    .flogie {
+        padding-top: 150px;
+    }
+}
